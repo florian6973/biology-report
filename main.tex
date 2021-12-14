@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\input{includes}
+
+\usepackage{biblatex}
+\addbibresource{biblio/biblio.bib}
+
+%\usepackage[backend=bibtex]{biblatex}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+
+\begin{document}
+
+    \input{cover}
+
+    \section{Introduction}
+
+    Blabla. Belle oeuvre : \autocite{zhangMulticladeEnvGag2021}, blabla.
+    
+    \newpage
+
+    \appendix
+
+    \section {Source code}
+    The source code of this document is available at \url{https://github.com/florian6973/biology-report}.
+    
+    \nocite{*}
+    \printbibliography
+    
+\end{document}
