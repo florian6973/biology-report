@@ -27,8 +27,6 @@
     This theme is closely linked to the mechanics of the immune system, in medicine, which will not be detailed in this article due to the needed knowledge in medicine.
     In any case, I would like to thank Ms. Stoven for her molecular biology course and her help in the writing of this article.
 
-    %Blabla. Belle oeuvre : \autocite{zhangMulticladeEnvGag2021}, blabla.
-
     \section{A brief history of vaccines}
 
         \subsection{Discovery of the principle}
@@ -44,31 +42,51 @@
 
             The word "vaccination" comes from the Latin word "vacca", which means "cow".
 
+            \subsubsection*{The immune system at a glance}
 
-            \subsubsection{A quick look on the immune system}
+                In the medical field, the immune system is mainly composed of two parts:
 
-                %humoral and cellular response
+                \begin{itemize}
+                    \item The innate immune system. After the infection, it is the first system to react. It is mainly represented by Natural Killers (NK) cells,
+                            phagocytes and dentritric cells which play an important role to initiate the adaptive response\footnote{The details for each different type 
+                                of cells will not be covered in this report.}.
+                    \item The adaptive (or acquired) immune system. This one is subdivised in two categories: 
+                        \begin{itemize}
+                            \item The cellular response, thanks to lymphocytes T (thymus) CD8+ (cluster of designation). They are cytotoxic and they can kill the infected cells.
+                                    To be efficient, in most cases, they need the major histocompatibility complex.
+                            \item The humoral response, thanks to lymphocytes B (Bursa of Fabricius). They produce antibodies (immunoglobulines, abbreviated Ig), which are proteins able to 
+                                    neutralize microbial effectors, from bacteria and viruses. Antibodies need antigens of the pathogens, which are proteins expressed by the pathogen, to recognize them.
+                        \end{itemize}
+                        Lymphocytes T CD4+ (helper) regulate both responses.
+                        The specifity of the adaptive immune system is its memory thanks to specific T and B memory cells, 
+                            and it can be easily observed using the concentration of immunoglobulines in the blood.
+                        
+                            \begin{figure}
+                                \centering
+                                \includegraphics[width=0.5\textwidth]{imgs/PrimarySecondaryResponses.JPG}
+                                \caption{Primary and secondary responses to specific antigens \autocite{pinkComparisonImmunityGeneral}}
+                                \label{fig:responses}
+                            \end{figure}
 
-                %T lymphocyte
+                        The graph \ref{fig:responses} shows that the response after the first infection is less important and slower after the second one.
+                        It also compares the concentration of IgM, an immoglobuline which are non-specific, 
+                            versus IgG, which are more specific microbial effectors such as toxines or proteins:
+                            it proves that the adaptive immune system becomes efficient after the innate system, and that there is a memory effect on the second infection.
 
-                %B lymphocyte : humoral
+                        % ANTIBODY, ANTIGEN picture?
 
-                % based on the memory, igM (non-specific antibody), quicker answer and more important, igG, more specific
-                % cellular response too but more complicated to see
+                        The cellular response is more complicated to quantify.
 
-                % antibodies production: 6 weeks after, membory B cell, increase till 15 weeks
+                        As regards pathogens, the incubation period can be short (pneumococcus) or long (hepatitis B virus).
 
-                % different objectives if incubation period is short or not (preumocoque vs HBV)
-
-            % variole eradication
-
-            % lymphocyte T & B mémoire
-
-            % schéma rappel et courbe antibodies dans les stratégies de vaccin
-
+                        It is important to notice that the immune system is very different according to the age of the person: the main phenomenon when ageing is immunosenescence,
+                            which makes the immune system less reactive and dynamic.
+                \end{itemize}
+              
         \subsection{First generation of vaccines}
             
-            It is only between 1870 and 1885 with Pasteur's works (helped by Emile Roux and Emile Duclaux, and based on Robert Koch's findings), that the first vaccines were developed \autocite{plotkinHistoryVaccination2014}.
+            It is only between 1870 and 1885 with Pasteur's works (helped by Emile Roux and Emile Duclaux, and based on Robert Koch's findings), 
+                that the first vaccines were developed \autocite{plotkinHistoryVaccination2014}.
             The first official vaccines that he conceived were against chicken cholera, anthrax, swine erysipelas and then rabies.
 
             The first generation of vaccines consists in pathogens which are live, weakened or killed. Live weakened vaccines are the most immunogenic,
@@ -81,19 +99,15 @@
                 aluminium salts, microparticles, squalanes, ligands of 
                 PRRs... They aim at amplifying the reaction for a whole population and each individual (especially old people whose immune system is less dynamic) and 
                 at reducing the quantity of active substance needed (dose sparing). The dosage should be very cautious not to hide the active substance.
+                
+            To prepare those vaccines, cell culture is often needed. 
+            To weaken viruses, other environments than human cells are used such as chicken cells so that the virus is no more adapted to human cells...
 
-            % how to to prepare these vaccines ?
-
-            To prepare a live weakeaned vaccine, the virus or the bacteria is replicated in adverse conditions several times.
-
-
-
-            % explain principle
-            % some schema cool
-            % majority : humoral response which can be measured to know if something is protected against a disease
-
-            To prepare those vaccines, cell culture is often needed before weakening the virus with different techniques such as 
-            
+            To prepare a live weakened vaccine, the virus or the bacteria is replicated in adverse conditions several times. Main vaccines of this type are BCG
+            (Bacillus Calmette-Guérin vaccine, against tuberculosis), the Mumps vaccine. It is important to note that different vaccines can be combined together,
+            like with the MMRV vaccine (Mumps, Measles, Rubella and Varicella: a tetravalent vaccine). It is not dangerous for health and avoid too many injections for children,
+            who must develop an immunity for many diseases in the first years.            
+                       
             %https://www.pnas.org/content/111/34/12283
 
             Thanks to the development of immunology and microbiology, in particular the ability to isolate pathogens, vaccines were better understood
@@ -106,23 +120,53 @@
 
         \subsection{Second generation of vaccines}
 
+            % https://vaccine-safety-training.org/subunit-vaccines.html
+
             This generation demands more development and technological advances,
-                to use subunits of viruses such as protein antigens or recombinant protein components (antigens for instance).
+                to use subunits of viruses such as protein antigens or inactivating toxins produced by the pathogen. %recombinant protein components (antigens for instance).
             There is also the need for adjuvant, which are substances which trigger a powerful immune response ; otherwise the vaccine would not be effective. 
             The response is again mainly humoral: sometimes it cannot activate Toll-Like Receptors on dentritic cells needed for a complete response.
 
+            Subunits vaccines (also called acellular vaccines) are stable and safe, with no risk to induce the disease but the right part of the virus should be choosen.
+                They can be protein-based, with polysaccharides, which is a sugar capsule produced by some pathogens (however it has less effect than proteins), or both (it is then called conjugate).
+            Inactivated toxins are called anatoxin is a toxin which has lost his toxic power thanks to heat and formaldehyde, but not totally its immunogenic ability.
 
-            An anatoxin is a toxin which has lost his toxic power thanks to heat and formaldehyde, but not totally its immunogenic ability.
+            To produce these units, the pathogen is cultivated at large scale before using chemicals to destroy and separate the parts of the pathogen.
+
+            Lots of recent vaccines use this technique: influenza, hepatitis A, HPV (Human papillomavirus infection), pertussis, tetanus (anatoxin). 
+                The first approved subunit was against hepatitis B in 1981 in the United States. 
+                At that time, it was a breakthrough because it represented the first vaccine to protect against liver cancer and against a sexually transmitted disease.
 
         \subsection{Towards a third generation}
 
-            %genetic vaccines
+            The third generation of vaccines can be described as genetic vaccines, since it is using genetic sequences to support information of the pathogen. 
+            It was made possible thanks to the latest discoveries in biotechnologies and genetics such as gene sequencing \autocite{chavdaDNAVaccinesSARSCoV22021}.  
 
-        % not only prophylathic but therapeutic
+            There are three main categories:
+            \begin{itemize}
+                \item Viral vector vaccines: a specific gene of the pathogen is put into an innocuous virus for humans. 
+                        This harmless virus can deliver the selected genetic material of the pathogen into the human cells.
+                        Then the cells produce proteins from the pathogen which can be used to train the immune system as a classic vaccine.
+                        For instance, the vaccines from the firm AstraZeneca and the Oxford University or Janssen against Covid-19 rely on this technique.
+                        A major drawback of viral vector vaccines is that it also makes us immune against the vector virus, 
+                            which in the future will have difficulties to deliver the genetic material.
+                \item mRNA vaccines: this will be discussed in the next section.
+                \item DNA (DesoxyriboNucleic Acid) vaccines: the gene from the pathogen is encoded with DNA instead of RNA
+                    and it is injected in our cell thanks to the same technique as mRNA vaccines.
+                    Nevertheless it must be carefully studied because of the possible effects on human DNA.
+            \end{itemize}
+
+            % tab récapulatif
 
     \section{mRNA vaccines: a promising technology}
 
         \subsection{Principle}
+
+                % mRNA as the blueprint for a protein of the pathogen
+                % temps de développement
+
+                nano lipid instead of virus.
+                difficult to store
 
         \subsection{Development}
 
@@ -137,20 +181,92 @@
 
         \subsection{Advantages and drawbacks}
 
+        % https://www.amazon.fr/Basic-Immunology-Book-Functions-Disorders-ebook/dp/B07N8ZKYPQ?asin=B07N8ZKYPQ&revisionId=4497585a&format=1&depth=1
+        
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{imgs/NumberOfCases.JPG}
+        \end{center}
+
+
+        % Diphtheria and Poliomyelitis almost disappeared
+        % only way to heal some serious diseases
+
+        % drawbacks: anaphylactic shock
+        % different according to the types
+        % development costs and time
+
+        % side effects: local pain, fever during a few days, fatigue
+
+        % a few people Guillain–Barré syndrome
+
+        
+            % majority : humoral response which can be measured to know if something is protected against a disease
+
     \section{New stakes for vaccines in the 21\up{st} century}
 
         \subsection{World inequalities}
 
+        % storage constraints
+        % WHO: "immunization agenda 2030"; global strategy: to put efforts together, 
+        % some regions in Africa more difficult
+
+        % https://www.immunizationagenda2030.org/scorecard for slides and explanations
+
+        
+        \begin{center}
+            \includegraphics[width=0.5\textwidth]{imgs/IA2030_Scorecard_May23-3.png}
+        \end{center}
+
         \subsection{Public policies}
+
+               % first and second response for a better efficiency : vaccine booster, like for COVID
+                % secondary response, a few month after the primary
+                % primary response : 15 days min
+
+                % intramuscular, subcutaneous, intradermic or mucosa injection
+                
+
+                % deferred protection but durable protection
+
+                % variant: serotherapy, only humoral, passive and temporary, by injecting immunoglobulines
+
+            % variole eradication
+
+
+            % schéma rappel et courbe antibodies dans les stratégies de vaccin
+        % In Frce: vaccine agenda: recommendations & obligations
+
+        % stakes with measles: need high vaccine coverage to avoid outbreaks
+
+        % vaccines for travelling + professionnal
+
+        % perception of side effects, controversies
+        \begin{center}
+            \includegraphics[width=0.5\textwidth, angle=90]{imgs/Perception.jpg} % Pilly 2021 Etudiant CMIT 1st edition
+        \end{center}
+
 
             Firstly it is an individual protection.
 
             Secondly it protects the whole population thanks to herd immunity: the pathogen is less likely to be transmitted ; otherwise it would be exponential,
                 as people observed for the Covid-19 pandemic.
 
+            % Several study to proove that it is not dangerous for health, especially metal adjuvants 
+  
+            % three types of population
+            % general population, population at-risk (immunodeficient, old people, comorbidities), particularly exposed population (professional, endemic zones)
+            % vaccine coverage
+            % trips?
+
+            % benefice/risk balance, side effects
+
         %t. Cinq vaccins sont recommandés pour 
 %les personnes de plus de 60 ans : antigrippal, antitétanique, 
 %antidiphtérique, anticoquelucheux et antipneumococcique. Par rapport aux s
+
+% avoid disease but also its circulation
+
+%serotherapy
 
 %augmenter les doses d'antigènes 
 %pour augmenter la présentation par les cellules dendritiques, utiliser de nouveaux adjuvants pour recruter plus 
@@ -161,8 +277,20 @@
 
         \subsection{New uses and technical challenges}
 
+        
+        Currently, there is no real therapeutic vaccines.
+
+        % not only prophylathic but therapeutic
+
         % prophylatic vaccines VS therapeutic vaccines (avoid expression of the disease)
         % active substance is immunogenic
+        % planify vaccines records
+        % electronical vaccination record
+
+        % therapeutic, post exposition
+        % Hepatitis A for instance, rabies
+
+        %contraindication
 
     \section{Conclusion}
 
@@ -224,13 +352,18 @@
     %
 
     \newpage
+    
+    \nocite{*}
+    \printbibliography
+
+    \newpage
 
     \appendix
 
     \section {Source code}
-    The source code of this document is available at \url{https://github.com/florian6973/biology-report}.
-    
-    \nocite{*}
-    \printbibliography
-    
+        The source code of this document is available at \url{https://github.com/florian6973/biology-report}.
+        It was written using Visual Studio Code and compiled with TeX Live (Windows).
+
+        In this repository a beamer is also available, to present this report.
+
 \end{document}
