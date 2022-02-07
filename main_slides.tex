@@ -1,0 +1,78 @@
+\documentclass[10pt]{beamer}
+\usepackage[french]{babel}
+
+\mode<presentation> {
+\usetheme{AnnArbor}
+\usecolortheme{beaver}
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[T1]{fontenc}
+\usepackage{bm}
+\usepackage{csquotes}
+
+
+
+%\usepackage[backend=bibtex]{biblatex}%00
+%\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage[natbib=true,style=authoryear,backend=bibtex,useprefix=true]{biblatex}
+\addbibresource{biblio/biblio.bib}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Effet bilame]{Effet bilame (bimetallic strip)}
+\author[Groupe 4]{Fakri Yassir, Karroucha Wissam, Mazé François, Pollet Florent} % Your name
+\institute[Mines Paris] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Mines ParisTech \\ % Your institution for the title page
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\begin{figure}
+    \centering
+    %\includegraphics[scale=0.1]{imgs/bilame.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Plan} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+\section{Effet bilame} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+
+\input{slides.tex}
+
+\begin{frame}
+    \Huge{\centerline{Merci ! Des questions ?}}
+    Ici \autocite{canouiHistoryPrinciplesVaccination2019}
+\end{frame}
+
+
+%\begin{frame}[t, allowframebreaks]
+%    \frametitle{References}
+%    \bibliographystyle{amsalpha}
+%    \bibliography{biblio/biblio.bib}
+%\end{frame}
+\begin{frame}[t,allowframebreaks]
+    \frametitle{References}
+    \printbibliography
+    \end{frame}
+
+
+%\def\newblock{}
+%\bibliography{biblio/biblio.bib}
+    
+    
+\end{document} 
