@@ -1,6 +1,8 @@
 \documentclass[10pt]{beamer}
 \usepackage[french]{babel}
 
+% how to fix use babel not french
+
 \mode<presentation> {
 \usetheme{AnnArbor}
 \usecolortheme{beaver}
@@ -23,8 +25,8 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Effet bilame]{Effet bilame (bimetallic strip)}
-\author[Groupe 4]{Fakri Yassir, Karroucha Wissam, Mazé François, Pollet Florent} % Your name
+\title[Vaccine strategies]{Vaccine strategies: the mRNA revolution}
+\author[Biology]{Pollet Florent} % Your name
 \institute[Mines Paris] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
 Mines ParisTech \\ % Your institution for the title page
@@ -37,7 +39,7 @@ Mines ParisTech \\ % Your institution for the title page
 \titlepage % Print the title page as the first slide
 \begin{figure}
     \centering
-    %\includegraphics[scale=0.1]{imgs/bilame.png}
+    \includegraphics[width=0.3\textwidth]{imgs/vaccineCover.jpg}
 \end{figure}
 \end{frame}
 
@@ -49,14 +51,12 @@ Mines ParisTech \\ % Your institution for the title page
 %----------------------------------------------------------------------------------------
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
-\section{Effet bilame} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
+
 
 \input{slides.tex}
 
 \begin{frame}
-    \Huge{\centerline{Merci ! Des questions ?}}
-    Ici \autocite{canouiHistoryPrinciplesVaccination2019}
+    \Huge{\centerline{Thanks! Any questions?}}
 \end{frame}
 
 
@@ -65,10 +65,11 @@ Mines ParisTech \\ % Your institution for the title page
 %    \bibliographystyle{amsalpha}
 %    \bibliography{biblio/biblio.bib}
 %\end{frame}
+\section*{Bibliography}
 \begin{frame}[t,allowframebreaks]
     \frametitle{References}
     \printbibliography
-    \end{frame}
+\end{frame}
 
 
 %\def\newblock{}

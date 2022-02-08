@@ -1,147 +1,209 @@
-%------------------------------------------------
-\section{Mécanique des microsystèmes} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
+\section*{Introduction}
 
-
-\subsection{La formule de Stoney} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
 \begin{frame}
-    \frametitle{Contexte et rappels}
+    \frametitle{Introduction}
     \begin{itemize}
-        \item En ce qui concerne la mécanique des microsystèmes...
-        \item Deux matériaux quelconques
-        \item Petites déformations (HPP)
-        \item $\bm{u} = (AX_1X_3 + CX_1)\bm{e_1} + (AX_2X_3 + CX_2)\bm{e_2} + (-\frac{A}{2}\left[X_1^2+X_2^2\right]-\frac{2\nu}{1-\nu}\left[\frac{A}{2}X_3^2+CX_3\right]+\frac{1+\nu}{1-\nu}\alpha\left[T-T_0\right]X_3)\bm{e_3}$
-        \item $A = 6\frac{M_fh_f}{M_sh_s^2}(\alpha_f-\alpha_s)(T-T_0)(1+\frac{h_f}{h_s})\Delta^{-1}$
-        \item $\Delta = 1+4\frac{M_fh_f}{M_sh_s}+6\frac{M_fh_f^2}{M_sh_s^2}+4\frac{M_fh_f^3}{M_sh_s^3}+\frac{M_f^2h_f^4}{M_s^2h_s^4}$
-        \item $C = \Delta^{-1}(T-T_0)\left[\alpha_s + 4 \alpha_f \frac{M_fh_f}{M_sh_s} + 3 (\alpha_s + \alpha_f)\frac{M_fh_f^2}{M_sh_s^2} + 4\alpha_s \frac{M_fh_f^3}{M_sh_s^3} + \alpha_f \frac{M_f^2h_f^4}{M_s^2h_s^4}  \right]$
+        \item How do vaccines work? What are the different types of vaccines?
+        \item To what extent do mRNA vaccines represent a breakthrough?
+        \item How do societies use and adapt to the development of vaccine?
     \end{itemize}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\textwidth]{imgs/paster.jpg}
+        \caption{Dr. Pasteur}
+        \label{fig:responses4}
+    \end{figure}
+
 \end{frame}
 
-% 30s
-    
+\section{A brief history of vaccines}
+\subsection{A quick look on immunology}
+
+
 \begin{frame}
-    \frametitle{La formule de Stoney (1909)}
+    \frametitle{The immune system}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{imgs/ImmunityCells.png}
+    \caption{Main cells of the immune system \autocite{yamauchiHippoPathwayMammalian2019}}
+    \label{fig:responses3}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{How to communicate?}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{imgs/Communication.png}
+    \caption{Major roles of each cells \autocite{jarczakSepsisPathophysiologyTherapeutic2021}}
+    \label{fig:responses10}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{The immune memory}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{imgs/PrimarySecondaryResponses.JPG}
+    \caption{Primary and secondary responses to specific antigens \autocite{pinkComparisonImmunityGeneral}}
+    \label{fig:responses12}
+\end{figure}
+\end{frame}
+
+% PAMPS et DAMPS
+%cytokines
+
+\subsection{The different generations of vaccines}
+
+\begin{frame}
+    \frametitle{Three main approaches through time}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{imgs/VaccineGeneration.JPG}
+        \caption{The different types of vaccines \autocite{philadelphiaMakingVaccinesHow2014}}
+        \label{fig:responses2}
+    \end{figure}
+\end{frame}
+
+\section{mRNA vaccines: a promising technology}
+\subsection{Principle}
+
+\begin{frame}{A new way of immunization}
     
     \begin{figure}
         \centering
-        %\includegraphics[scale=0.07]{imgs/stoney.jpg}
-        \caption{George Gerald Stoney (1863-1942)}
+        \includegraphics[width=0.5\textwidth]{imgs/mRNA_Vaccine.JPG}
+        \caption{Process to produce mRNA vaccines \autocite{MRNAVaccinesInfectious}}
+        \label{fig:mRNAvac}
     \end{figure}
+    
+\end{frame}
 
-    \begin{itemize}
-        \item Supposons que $\frac{h_f}{h_s} \ll 1$
-        \item Quelle est la courbure $c$ prise par l'ensemble ?
-    \end{itemize}
+\subsection{Development}
+
+\begin{frame}{Building a mRNA vaccine}
     
     \begin{figure}
         \centering
-        %\includegraphics[scale=0.2]{imgs/deformation.JPG}
-        \caption{Résultat de simulation}
+        \includegraphics[width=0.6\textwidth]{imgs/RNA2.jpg}
+        \caption{Choosing the right mRNA \autocite{granados-riveronEngineeringCurrentNucleosidemodified2021}}
+        \label{fig:mRNAvac2}
     \end{figure}
     
 \end{frame}
 
+\begin{frame}{Two types of mRNA}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.65\textwidth]{imgs/mRNA_action.JPG}
+    \caption{Comparison between conventional and self-amplifying mRNA \autocite{MRNATransformativeTechnology}}
+    \label{fig:mRNAtypes}
+\end{figure}
+\end{frame}
 
-% 1m
+
+\subsection{Evolution or revolution?}
+
 
 \begin{frame}
-    \frametitle{La formule de Stoney (1909)}
-
-    \begin{itemize}
-        \item $c = 6\frac{M_fh_f}{M_sh_s^2}(\alpha_s-\alpha_f)(T-T_0)$ si $M_fh_f \ll M_sh_s$ 
-        \item Dans les autres directions ? Courbure nulle ou parabolique
-        \item Permet de prévoir la déformation de l'ensemble, en combinant ls caractéristiques géométriques et les propriétés mécaniques des couches
-    \end{itemize}
-    
+    \frametitle{The COVID-19 case study: vaccine development}
     \begin{figure}
         \centering
-        %\includegraphics[scale=0.25]{imgs/courbes.png}
-        \caption{Paraboloïde de révolution et hyperplans}
+        \includegraphics[width=0.9\textwidth]{imgs/CovidDev.png}
+        \caption{Comparison of vaccine developments \autocite{krammerSARSCoV2VaccinesDevelopment2020}}
+        \label{fig:responses5}
     \end{figure}
-    
 \end{frame}
 
-% 4m15
-
-\begin{frame}
-    \frametitle{La formule de Stoney (1909)}
-
+\begin{frame}{What is possible thanks to mRNA?}
+    Major advances:
     \begin{itemize}
-        \item Qu'évoquait l'article de Stoney ?
-        \item Une formule estimant sous certaines conditions (précédemment évoquées) pour déterminer en mesurant la tension et la courbure la couche de nickel déposée sur une électrode 
-        \item Reliait la valeur des contraintes à la courbure de l'électrode avec son dépôt
-        \item Formule 2D améliorée par Berry en 1988
+        \item Computer support
+        \item On demand vaccine, more investments
+        \item Cancer treatment %https://www.cancer.gov/news-events/cancer-currents-blog/2022/mrna-vaccines-to-treat-cancer
+        \item Therapeutic application
     \end{itemize}
-    
+    Some obstacles:
+    \begin{itemize}
+        \item Preservation
+        \item Public acceptance (and scientific acceptance)
+    \end{itemize}
 \end{frame}
 
-% 4m45
+\section{New stakes for vaccines in the 21\up{st} century}
+\subsection{World inequalities}
 
 \begin{frame}
-\frametitle{Expérience sommaire : présentation}
+    \frametitle{The COVID-19 case study: vaccine inequalities}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{imgs/Inequalities.png}
+        \caption{COVID-19 vaccine deliveries (source \emph{The Economist})}
+        \label{fig:responses6}
+    \end{figure}
+\end{frame}
+
+\subsection{Public policies}
+
+% Global Vaccine Action Plan
+% immunization agenda 2030
+
+\begin{frame}
+    \frametitle{Public health necessity}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{imgs/VaccineSchedule.JPG}
+        \caption{Vaccine schedule in France (Institut de veille sanitaire, InVS) \autocite{spfAssessmentVaccinationCoverage}}
+        \label{fig:responses7}
+    \end{figure}
+\end{frame}
+% Franco polio Spain 1950-1963
+
+\begin{frame}
+    \frametitle{Anti-vax: vaccine hesitancy}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{imgs/VaccineHesitancy.png}
+        \caption{Global survey about vaccine safety \autocite{SurveyRevealsEuropean}}
+        \label{fig:responses8}
+    \end{figure}
+\end{frame}
+% why lose faith : adverse effect, trust, fake news (alter DNA), bill gates (chip), conspiracy theories
+
+\subsection{New perspectives for the future}
+
+\begin{frame}
+    \frametitle{The big picture}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.65\textwidth]{imgs/vaccineEvolution.PNG}
+        \caption{What to expect about vaccines? \autocite{rappuoliVaccinologyPostCOVID192021}}
+        \label{fig:responses13}
+    \end{figure}
+\end{frame}
+% why lose faith : adverse effect, trust, fake news (alter DNA), bill gates (chip), conspiracy theories
+
+
+
+
+
+\section*{Conclusion}
+
+\begin{frame}{Conclusion}
 \begin{itemize}
-    \item Découper des bandes (8 cm par 1 cm environ)
-    \item Feuille d'aluminium : $\alpha_f = 23 \times 10^{-6} K^{-1}$, $h_f = 0.02 mm$, $E_f = 62 GPa$, $\nu_f = 0.35$
-    \item Papier bristol : $\alpha_s = 3 \times 10^{-6} K^{-1}$, $h_s = 0.3 mm$, $E_s = 3 GPa$, $\nu_s = 0.2$
-    \item Colle pour fixer les deux morceaux
-    \item Bougie : $T = 200$ °C (juste en-dessous de la température d'auto-inflammation du papier) et $T_0 = 25$ °C
-    \item C'est parti !
+    \item Active field of research since the eighteenth century
+    \item At the crossroads of medicine, biology, chemistry and computer science
+    \item 50 million future deaths averted from 2021-2030
+    \item New challenges to face to continue vaccine development and avoid rejection
 \end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imgs/Objectives.JPG}
+    \caption{Immunization agenda 2030 (source WHO)}
+    \label{fig:responses9}
+\end{figure}
 \end{frame}
-
-% 6m
-
-\begin{frame}
-\frametitle{Expérience sommaire : résultats}
-    \begin{itemize}
-        \item Les se dilatent différemment sous l'effet de la chaleur
-        \item On remarque que c'est l'aluminium qui est sur la face externe de la courbure. 
-        \item On peut chercher à vérifier le signe de la courbure dans la formule de Stoney, même si la deuxième hypothèse $M_f h_f << M_s h_s$ n'est pas vraiment vérifiée et que l'on sort légèrement de l'hypothèse des petites perturbations :
-        \begin{itemize}    
-            \item $T-T_0 > 0$
-            \item $\alpha_s - \alpha_f < 0$
-            \item Donc $c < 0$ (la courbure est vers le bas)
-        \end{itemize}
-        \item Diversité des applications de cet effet (ici, Stoney, électronique)
-    \end{itemize}
-\end{frame}
-
-%6m30
-
-
-\subsection{Contraintes dans un film mince sur un substrat} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
-\begin{frame}
-\frametitle{Forme simplifiée des contraintes sous les hypothèses de Stoney}
-\begin{itemize}
-    \item Contrainte moyenne : $\bar{\sigma}_{11}=\frac{1}{h}\int\sigma_{11}\rm{d}X_3$
-    \item Développons au premier ordre $\Delta$, $C$ et $A$
-    \item $\sigma_{11}^f=M_f(AX_3+C-\alpha_f(T-T_0)) \approx M_f (\alpha_s - \alpha_f)(T-T_0)$
-    \item $\sigma_{11}^s=M_s(AX_3+C-\alpha_s(T-T_0)) \approx \frac{M_fh_f}{M_sh_s} (\alpha_f-\alpha_s)(T-T_0)(6\frac{X_3}{h_s}+4)$
-\end{itemize}
-\end{frame}
-
-% 8m
-
-\begin{frame}
-    \frametitle{Forme simplifiée des contraintes sous les hypothèses de Stoney}
-    \begin{itemize}
-        \item Par équi-biaxialité, $\bar{\sigma}_{11}^f=\bar{\sigma}_{22}^f=M_f(\alpha_s-\alpha_f)(T-T_0)$, ce qui est un résultat remarquable (ne dépend pas de la géométrie ni des propriétés élastiques du substrat, que de propriétés thermoélastiques du film et du désaccord de dilatation)
-        \item De même, $\bar{\sigma}_{11}^s=\bar{\sigma}_{22}^s=M_f\frac{h_f}{h_s}(\alpha_f-\alpha_s)(T-T_0)$
-        \item La contrainte moyenne est donc nulle (cohérent car il n'y a pas de chargement extérieur et l'on est en statique, que des contraintes locales à l'intérieur)
-        \item Quelle est la fibre neutre ?
-    \end{itemize}
-\end{frame}
-
-% 9m15
-
-\begin{frame}
-    \frametitle{Fibre neutre}
-    \begin{itemize}
-        \item $\sigma_{11}^s=0 \implies X_3 \simeq \frac{-2h_s}{3}$ (cohérent, bien dans le substrat, car contrainte constante dans le film)
-        \item Confirmation par représentation graphique et l'article de Stoney (pas le cas pour l'exemple de la partie précédente)
-    \end{itemize}
-\end{frame}
-
 % 10m
+
