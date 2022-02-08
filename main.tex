@@ -193,7 +193,7 @@
             The first tests were realized in the 1990s by Wolff \autocite{wolffDirectGeneTransfer1990}.
             But much progress has been needed in the 2000s as regards the synthesis of mRNA.
 
-            The main steps to develop a mRNA vaccine are:
+            The main steps, summarized in \ref{fig:mRNAvac}, to develop a mRNA vaccine are:
             \begin{itemize}
                 \item First, scientists have to find an antigen that can characterize the pathogen thanks to reverse genetics.
                 \item Second, the gene encoding this antigen is sequenced. 
@@ -204,14 +204,17 @@
                 \item This DNA constitutes a DNA template plasmid, and traduced \emph{in vitro} into mRNA.
                         All this process is realized thanks to enzymes, especially the RNA polymerase. The DNase then degrades the template DNA.
                         It is also an enzyme which adds the required 5' cap, stabilizing the molecule.
-                \item A step of purification is then critical to obtain an efficient mRNA vaccine.
+                \item A step of purification is then critical to obtain an efficient mRNA vaccine. 
+                        Current techniques are for instance high-performance liquid chromatography (HPLC) or fast protein liquid chromatography (FPLC)
                         Enzymes, remaining DNA and incorrect transcripts are removed.
                         There are also double-stranded RNA (dsRNA) which can alter the immune activation if they are still present.
-                        Finally 
-            \end{itemize}
+                        Finally some tests (such as potency tests) are conducted to check the product.
+            \end{itemize} % test d'activité =/= safety test
 
-            
-            
+            In current vaccines, the nucleotide U is replaced by 1-methyl-3'-pseudouridylyl, noted $\Psi$. Empirically it increases the efficiency of the vaccine.
+
+            % https://www.iconsci.com/what-are-the-differences-between-fplc-and-hplc/
+                        
             \begin{figure}
                 \centering
                 \includegraphics[width=0.5\textwidth]{imgs/mRNA_Vaccine.JPG}
@@ -219,14 +222,14 @@
                 \label{fig:mRNAvac}
             \end{figure}
             
-            \begin{figure}
-                \centering
-                \includegraphics[width=0.5\textwidth]{imgs/RNA2.jpg}
-                \caption{Synthesis of \autocite{granados-riveronEngineeringCurrentNucleosidemodified2021}}
-                \label{fig:mRNAvac2}
-            \end{figure}
+            %\begin{figure}
+            %    \centering
+            %    \includegraphics[width=0.5\textwidth]{imgs/RNA2.jpg}
+            %    \caption{Synthesis of \autocite{granados-riveronEngineeringCurrentNucleosidemodified2021}}
+            %    \label{fig:mRNAvac2}
+            %\end{figure}
 
-            Nowadays, there are two major types of mRNA vaccines:
+            Nowadays, there are two major types of mRNA vaccines, as the Figure \ref{fig:mRNAtypesnext} shows:
             \begin{itemize}
                 \item Conventional mRNA which only corresponds to the studied gene
                 \item Self-amplifying mRNA which also encodes the replication machinery to produce many antigens.
@@ -239,19 +242,7 @@
                 \label{fig:mRNAtypesnext}
             \end{figure}
 
-            %potency tests
-
-            % Protéasome
-
-
-                %Currently, two forms of
-%mRNA vaccines have been developed: conventional mRNA encoding
-%the antigen of interest flanked by 50 and 30 UTRs, and self-amplifying
-%mRNA derived from the genome of positive-stranded RNA viruses
-
-
-                % synthèse DNA
-                % in vitro RNA traduction
+        % Code source of the modified Spike-encoding gene : https://zestedesavoir.com/billets/3750/explorons-le-code-source-du-vaccin-biontech-pfizer-contre-le-sars-cov-2/
 
         % Severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2)
         % https://www.medpagetoday.com/special-reports/exclusives/91604
@@ -274,6 +265,7 @@
             The main advantages are:
             \begin{itemize}
                 \item It embodies the idea of "vaccine on demand". It would allow people to face epidemics such as for Zika and Ebola as well as pandemics.
+                    In some classical vaccines, mRNA traduction can be achieved \emph{in vitro} to produce the pathogen proteins to inject, but it is a long and complicated process.
                 \item It creates a complete immune response (humoral and cellular), without needing adjuvants like other vaccines:
                     they have intrinsic adjuvant properties since they can be recognized by PRRs, initiating an innate response activating
                     the subsequent adaptive immune system (thanks to dendritic cells and cytokines for instance).
@@ -282,6 +274,7 @@
             The main drawbacks are:
             \begin{itemize}
                 \item It is very difficult to preserve the vaccine because mRNA is not stable.
+                \item The duration of expression is short because mRNA is quickly degraded, so vaccines need several doses.
             \end{itemize}
 
             
@@ -291,6 +284,8 @@
                 \caption{Synthesis of \autocite{rappuoliVaccinologyPostCOVID192021}}
                 \label{fig:mRNAtypes}
             \end{figure}
+
+            Currently scientists are trying to improve the efficiency of mRNA vaccines by trying different caps, doing codon optimization, adding complementary RNAs or dsRNA... \autocite{MRNATransformativeTechnology}
 
 
         % https://www.amazon.fr/Basic-Immunology-Book-Functions-Disorders-ebook/dp/B07N8ZKYPQ?asin=B07N8ZKYPQ&revisionId=4497585a&format=1&depth=1
