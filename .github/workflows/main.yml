@@ -10,6 +10,10 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: main.tex
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: main_slides.tex
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
          repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -18,3 +22,4 @@ jobs:
          title: "PDF généré"
          files: |
            main.pdf
+           main_slides.pdf
