@@ -275,3 +275,4 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 main_slides.pdf
+main.pdf

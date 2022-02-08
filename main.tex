@@ -55,8 +55,18 @@
                             \item The cellular response, thanks to lymphocytes T (thymus) CD8+ (cluster of designation). They are cytotoxic and they can kill the infected cells.
                                     To be efficient, in most cases, they need the major histocompatibility complex.
                             \item The humoral response, thanks to lymphocytes B (Bursa of Fabricius). They produce antibodies (immunoglobulines, abbreviated Ig), which are proteins able to 
-                                    neutralize microbial effectors, from bacteria and viruses. Antibodies need antigens of the pathogens, which are proteins expressed by the pathogen, to recognize them.
+                                    neutralize microbial effectors, from bacteria and viruses. 
+                                    A schematic structure is delivered in \ref{fig:antigens}.
+                                    Antibodies need antigens of the pathogens, which are proteins expressed by the pathogen, to recognize them.
                         \end{itemize}
+
+                        \begin{figure}
+                            \centering
+                            \includegraphics[width=0.5\textwidth]{imgs/Antigen.png}
+                        \caption{Schematic diagram of an antibody and antigens (source \emph{Wikipedia})}
+                            \label{fig:antigens}
+                        \end{figure}
+
                         Lymphocytes T CD4+ (helper) regulate both responses.
                         The specifity of the adaptive immune system is its memory thanks to specific T and B memory cells, 
                             and it can be easily observed using the concentration of immunoglobulines in the blood.
@@ -71,9 +81,7 @@
                         The graph \ref{fig:responses} shows that the response after the first infection is less important and slower after the second one.
                         It also compares the concentration of IgM, an immoglobuline which are non-specific, 
                             versus IgG, which are more specific microbial effectors such as toxines or proteins:
-                            it proves that the adaptive immune system becomes efficient after the innate system, and that there is a memory effect on the second infection.
-
-                        % ANTIBODY, ANTIGEN picture?
+                            it proves that the adaptive immune system becomes efficient after the innate system, and that there is a memory effect on the second infection.                     
 
                         The cellular response is more complicated to quantify.
 
@@ -97,7 +105,7 @@
 
             Adjuvants can be very diverse and numerous as well as their mechanism of action: killed mycobacteria, oils, 
                 aluminium salts, microparticles, squalanes, ligands of 
-                PRRs... They aim at amplifying the reaction for a whole population and each individual (especially old people whose immune system is less dynamic) and 
+                PRRs (Pattern Recognition Receptor)... They aim at amplifying the reaction for a whole population and each individual (especially old people whose immune system is less dynamic) and 
                 at reducing the quantity of active substance needed (dose sparing). The dosage should be very cautious not to hide the active substance.
                 
             To prepare those vaccines, cell culture is often needed. 
@@ -162,28 +170,27 @@
 
         \subsection{Principle}
 
-                It is important to understand the differences between \emph{in vitro}, \emph{in vivo} and \emph{in situ}.
-                %todo
-                
+                First and firemost, it is important to understand the differences between the terms \emph{in vitro}, \emph{in vivo} and \emph{in situ} (from the Latin).
+                \begin{itemize}
+                    \item \emph{in vitro} which means "in glass" refers to tube experiments.
+                    \item \emph{in vivo} which means "within the living" refers to experiments on living organisms (humans, animals, plants...).
+                    \item \emph{in situ} which means "on site" refers to the usual place an event should happen (for example at a specific point in the human body).
+                \end{itemize}
+                The aim with this new type of vaccine is to realize a minimum of steps \emph{in vitro} and \emph{in vivo} while preparing the vaccine and
+                    let people's cells do most of the "job", given them only information about a part of the pathogen instead of the whole microbe thanks
+                    to mRNA \autocite{maruggiMRNATransformativeTechnology2019}.             
 
-                The two first incentive were quicker development (with a financial and medical interest) and a wider and safer immune response.
+                The two major incentive which were met were quicker development (with a financial and medical interest) and a wider and safer immune response.
                 However, it can lead to other uses and it creates new perspectives as regards therapies.
 
-                % mRNA as the blueprint for a protein of the pathogen
-                % temps de développement
+                Therefore, mRNA represents the blueprint for a protein of the pathogen and it does not need a virus as a vector
+                    and it has fewer risks/unknown effects than pDNA, even if it is a very fragile molecule.
+                The way to convey mRNA relies on nano-lipids instead of viruses, which can efficiently enter the cells.
 
-                %nano lipid instead of virus.
-                %difficult to store
- 
-                cf \autocite{maruggiMRNATransformativeTechnology2019}
-                % ntrinsic adjuvant properties because of their recognition by specific
-%pattern recognition receptors (PRRs) and elicitation of innate immune
-%responses, which are critical for maturation of dendritic cells (DCs) to
-%enhance the induction of subsequent adaptive immune responses.
 
         \subsection{Development}
 
-            The first tests were realized in the 1990s by Wolff. \autocite*[]{wolffDirectGeneTransfer1990}
+            The first tests were realized in the 1990s by Wolff \autocite{wolffDirectGeneTransfer1990}.
             But much progress has been needed in the 2000s as regards the synthesis of mRNA.
 
             The main steps to develop a mRNA vaccine are:
@@ -191,7 +198,8 @@
                 \item First, scientists have to find an antigen that can characterize the pathogen thanks to reverse genetics.
                 \item Second, the gene encoding this antigen is sequenced. 
                     The sequence can be shared on the Internet all the world, allowing global research and speeding up development.
-                \item Then, the gene can be synthetized thanks to recent biotechnologies like artificial gene synthesis, often called DNA printing.
+                \item Then, the gene can be synthetized thanks to recent biotechnologies like artificial gene synthesis, often called DNA printing. 
+                    Firms like Thermo Fisher Scientific are offering a lot of services in this field.
                 % https://www.thermofisher.com/fr/fr/home/references/ambion-tech-support/probe-labeling-systems/general-articles/the-basics-in-vitro-transcription.html
                 \item This DNA constitutes a DNA template plasmid, and traduced \emph{in vitro} into mRNA.
                         All this process is realized thanks to enzymes, especially the RNA polymerase. The DNase then degrades the template DNA.
@@ -228,7 +236,7 @@
                 \centering
                 \includegraphics[width=0.5\textwidth]{imgs/mRNA_action.JPG}
                 \caption{Synthesis of \autocite{MRNATransformativeTechnology}}
-                \label{fig:mRNAtypes}
+                \label{fig:mRNAtypesnext}
             \end{figure}
 
             %potency tests
@@ -266,13 +274,24 @@
             The main advantages are:
             \begin{itemize}
                 \item It embodies the idea of "vaccine on demand". It would allow people to face epidemics such as for Zika and Ebola as well as pandemics.
-                \item It creates a complete immune response (humoral and cellular).
+                \item It creates a complete immune response (humoral and cellular), without needing adjuvants like other vaccines:
+                    they have intrinsic adjuvant properties since they can be recognized by PRRs, initiating an innate response activating
+                    the subsequent adaptive immune system (thanks to dendritic cells and cytokines for instance).
             \end{itemize}
 
             The main drawbacks are:
             \begin{itemize}
                 \item It is very difficult to preserve the vaccine because mRNA is not stable.
             \end{itemize}
+
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.5\textwidth]{imgs/Revolution.PNG}
+                \caption{Synthesis of \autocite{rappuoliVaccinologyPostCOVID192021}}
+                \label{fig:mRNAtypes}
+            \end{figure}
+
 
         % https://www.amazon.fr/Basic-Immunology-Book-Functions-Disorders-ebook/dp/B07N8ZKYPQ?asin=B07N8ZKYPQ&revisionId=4497585a&format=1&depth=1
         
@@ -376,6 +395,7 @@
 
         
         Currently, there is no real therapeutic vaccines.
+        
 
         % not only prophylathic but therapeutic
 
@@ -462,5 +482,7 @@
         It was written using Visual Studio Code and compiled with TeX Live (Windows).
 
         In this repository a beamer is also available, to present this report.
+
+        Bibliography was organized thanks to Zotero.
 
 \end{document}
