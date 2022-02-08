@@ -22,4 +22,4 @@ jobs:
          title: "PDF généré"
          files: |
            main.pdf
-           main_latex.pdf
+           main_slides.pdf
